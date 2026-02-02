@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 40px 16px;
+  background: #f8fafc; /* Matches your light theme screenshot */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally centers the card on the screen */
+  min-height: 100vh;
+}
+
+/* --- Card Container --- */
+.login-card, #dv-widget {
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 2.5rem; /* More breathing room inside */
+  border-radius: 12px; /* Softer corners */
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  
+  /* Flexbox to force vertical stacking */
+  display: flex;
+  flex-direction: column; 
+}
+
+/* --- Typography & Logo --- */
+
+.rpg-logo {
+  font-size: 3rem;
+  text-align: center;     /* Explicitly centers the emoji */
+  margin: 0 auto 1rem auto; /* Centers the block itself + bottom margin */
+  display: block;
+}
+
+h1 {
+  text-align: center;     /* Centers the text "Sign On" */
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 2rem 0;     /* Big margin below "Sign On" */
+  color: #0f172a;
+  width: 100%;
+}
+
+/* --- Form Layout --- */
+
+.form-group {
+  margin-bottom: 1.5rem; /* Fixes "no margins between elements" */
+  width: 100%;           /* Ensures container fills the card */
+}
+
+label {
+  display: block;        /* Forces label to its own line */
+  text-align: left;      /* Standard UX: Labels stay left... */
+  font-weight: 600;
+  margin-bottom: 0.5rem; /* Space between label and input */
+  color: #334155;
+  font-size: 0.9rem;
+}
+
+/* --- Inputs --- */
+input[type="text"], 
+input[type="password"] {
+  width: 100%;           /* FORCE full width */
+  padding: 12px;         /* Taller, more comfortable input */
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Critical: Includes padding in width calculation */
+  transition: all 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* --- Button --- */
+.btn-save {
+  width: 100%;           /* FORCE full width (Visually centers it) */
+  margin-top: 0.5rem;    
+  padding: 14px;         /* Taller button */
+  background-color: #2563eb; 
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-save:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-save:disabled {
+  background-color: #94a3b8;
+  cursor: wait;
+}
+
+/* --- Utilities --- */
+.alert-error {
+  color: #dc2626;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}

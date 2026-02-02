@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"restoreTerminals.terminals": [
+			{
+				"splitTerminals": [
+					{
+						"name": "Backend",
+						"commands": ["PORT=3001 node server.js"]
+					},
+					{
+						"name": "Frontend",
+						"commands": ["npx http-server -p 3000 --cors -c-1"]
+					},
+					{
+						"name": "Ngrok",
+						"commands": ["ngrok http 3000"]
+					}
+				]
+			}
+		]
+	}
+}

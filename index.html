@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Enter the Realm</title>
+  
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://apps.pingone.com/signals/web-sdk/5.6.0/signals-sdk.js" defer></script>
+  <script src="https://assets.pingone.com/davinci/latest/davinci.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <div id="pre-login-wrapper" class="login-card">
+    
+    <div class="rpg-logo">⚔️</div>
+
+    <h1>Sign On</h1>
+
+    <div id="local-error" class="alert-error" style="display: none;"></div>
+
+    <form id="localUsernameForm" onsubmit="event.preventDefault();">
+        
+        <div class="form-group">
+            <label for="local-username">Username</label>
+            <input 
+                type="text" 
+                id="local-username" 
+                name="username" 
+                autocomplete="username"
+                placeholder="Enter your username"
+                required
+            >
+        </div>
+
+        <button
+            id="start-btn"
+            type="submit"
+            class="btn-save" 
+        >
+            Enter the Realm
+        </button>
+
+    </form>
+  </div>
+
+  <div id="dv-widget-wrapper" style="display: none;">
+    <div id="dv-widget"></div> 
+  </div>
+
+</body>
+</html>

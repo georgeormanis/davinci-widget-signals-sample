@@ -1,0 +1,23 @@
+{
+    "restoreTerminals.terminals": [
+        {
+            "splitTerminals": [
+                {
+                    "name": "Backend",
+                    "commands": ["PORT=3001 node server.js"],
+                    "cwd": "${workspaceFolder}"
+                },
+                {
+                    "name": "Frontend",
+                    "commands": ["npx http-server -p 3000 --cors -c-1"],
+                    "cwd": "${workspaceFolder}"
+                },
+                {
+                    "name": "Ngrok",
+                    "commands": ["ngrok http 3000"],
+                    "cwd": "${workspaceFolder}"
+                }
+            ]
+        }
+    ]
+}

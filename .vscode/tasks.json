@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Backend",
+            "type": "shell",
+            "command": "PORT=3001 node server.js",
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": { "group": "davinci-servers" }
+        },
+        {
+            "label": "Start Frontend",
+            "type": "shell",
+            "command": "npx http-server -p 3000 --cors -c-1",
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": { "group": "davinci-servers" }
+        },
+        {
+            "label": "Start Ngrok",
+            "type": "shell",
+            "command": "ngrok http 3000",
+            "isBackground": true,
+            "problemMatcher": [],
+            "presentation": { "group": "davinci-servers" }
+        },
+        {
+            "label": "🚀 Launch All",
+            "dependsOn": ["Start Backend", "Start Frontend", "Start Ngrok"],
+            "problemMatcher": []
+        }
+    ]
+}
