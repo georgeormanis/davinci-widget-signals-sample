@@ -1,7 +1,6 @@
 # DaVinci Widget + PingOne Signals (Protect) Sample
 
 A reference sample app that demonstrates how to integrate **PingOne Signals (Protect) SDK** with the **PingOne DaVinci Widget**.
-For details on how the widget sample app works see the [davinci-widget-sample-app](https://github.com/georgeormanis/davinci-widget-sample-app.git) repo.
 
 This app captures device intelligence and behavioral data (signals) *before* the DaVinci Widget loads, ensuring that the risk engine has a complete picture of the user's environment for precise risk-based authentication (RBA).
 
@@ -49,3 +48,6 @@ const REGION          = "com";                     // e.g., "com", "eu", "asia"
 DAVINCI_COMPANY_ID="YOUR_DAVINCI_COMPANY_ID"    # This is the same as your PingOne Environment ID
 DAVINCI_API_KEY="YOUR_DAVINCI_APP_API_KEY"      # Your DaVinci Application API key
 DAVINCI_REGION="com"                            # Your PingOne region
+```
+### 3. Running the App
+For details on how the widget sample app works see the [davinci-widget-sample-app](https://github.com/georgeormanis/davinci-widget-sample-app.git) repo.
