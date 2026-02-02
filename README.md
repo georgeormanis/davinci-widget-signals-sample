@@ -35,7 +35,7 @@ Update your DaVinci flow to accept the incoming risk data.
     * Map **User Agent** to `Global` > `User Agent`.
 
 ### 2. Local Project Config
-Open `app.js` and `server.js` (or `.env`) and update the constants:
+Open `app.js` and `.env` and update the constants:
 
 **`app.js`**
 ```javascript
@@ -43,3 +43,9 @@ const PINGONE_ENV_ID  = "YOUR_PINGONE_ENV_ID";     // Env ID where Protect is en
 const COMPANY_ID      = "YOUR_DAVINCI_COMPANY_ID"; // DaVinci Company ID
 const POLICY_ID       = "YOUR_DAVINCI_POLICY_ID";  // Flow Policy ID
 const REGION          = "com";                     // e.g., "com", "eu", "asia"
+```
+**`.env`**
+```javascript
+DAVINCI_COMPANY_ID="YOUR_DAVINCI_COMPANY_ID"    # This is the same as your PingOne Environment ID
+DAVINCI_API_KEY="YOUR_DAVINCI_APP_API_KEY"      # Your DaVinci Application API key
+DAVINCI_REGION="com"                            # Your PingOne region

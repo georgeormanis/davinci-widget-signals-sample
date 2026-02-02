@@ -1,12 +1,12 @@
 body {
   margin: 0;
   padding: 40px 16px;
-  background: #f8fafc; /* Matches your light theme screenshot */
+  background: #f8fafc; 
   font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   color: #1e293b;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Horizontally centers the card on the screen */
+  align-items: center; 
   min-height: 100vh;
 }
 
@@ -15,8 +15,8 @@ body {
   background: white;
   width: 100%;
   max-width: 400px;
-  padding: 2.5rem; /* More breathing room inside */
-  border-radius: 12px; /* Softer corners */
+  padding: 2.5rem;
+  border-radius: 12px;
   border: 1px solid #e2e8f0;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
@@ -30,16 +30,16 @@ body {
 
 .rpg-logo {
   font-size: 3rem;
-  text-align: center;     /* Explicitly centers the emoji */
-  margin: 0 auto 1rem auto; /* Centers the block itself + bottom margin */
+  text-align: center;   
+  margin: 0 auto 1rem auto; 
   display: block;
 }
 
 h1 {
-  text-align: center;     /* Centers the text "Sign On" */
+  text-align: center;
   font-size: 1.75rem;
   font-weight: 700;
-  margin: 0 0 2rem 0;     /* Big margin below "Sign On" */
+  margin: 0 0 2rem 0;
   color: #0f172a;
   width: 100%;
 }
@@ -47,15 +47,15 @@ h1 {
 /* --- Form Layout --- */
 
 .form-group {
-  margin-bottom: 1.5rem; /* Fixes "no margins between elements" */
-  width: 100%;           /* Ensures container fills the card */
+  margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 label {
-  display: block;        /* Forces label to its own line */
-  text-align: left;      /* Standard UX: Labels stay left... */
+  display: block;  
+  text-align: left; 
   font-weight: 600;
-  margin-bottom: 0.5rem; /* Space between label and input */
+  margin-bottom: 0.5rem; 
   color: #334155;
   font-size: 0.9rem;
 }
@@ -63,12 +63,12 @@ label {
 /* --- Inputs --- */
 input[type="text"], 
 input[type="password"] {
-  width: 100%;           /* FORCE full width */
-  padding: 12px;         /* Taller, more comfortable input */
+  width: 100%;           
+  padding: 12px;         
   border: 1px solid #cbd5e1;
   border-radius: 6px;
   font-size: 1rem;
-  box-sizing: border-box; /* Critical: Includes padding in width calculation */
+  box-sizing: border-box; 
   transition: all 0.2s;
 }
 
@@ -80,9 +80,9 @@ input:focus {
 
 /* --- Button --- */
 .btn-save {
-  width: 100%;           /* FORCE full width (Visually centers it) */
+  width: 100%;           
   margin-top: 0.5rem;    
-  padding: 14px;         /* Taller button */
+  padding: 14px;         
   background-color: #2563eb; 
   color: white;
   font-weight: 600;

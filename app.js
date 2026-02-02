@@ -1,9 +1,9 @@
 // app.js – DaVinci widget launcher
 
 // 🔧 CONFIG – update these for your environment
-const PINGONE_ENV_ID  = "865ad4fe-8d3c-415d-a9d3-59373d34b42b";       // PingOne Protect Environment ID
-const COMPANY_ID      = "865ad4fe-8d3c-415d-a9d3-59373d34b42b";   // DaVinci Company ID
-const POLICY_ID       = "4860ba0c8cf79e509c6fcfe13594cc44";    // DaVinci Flow Policy ID
+const PINGONE_ENV_ID  = "YOUR_PINGONE_ENV_ID";       // PingOne Protect Environment ID
+const COMPANY_ID      = "YOUR_DAVINCI_COMPANY_ID";   // DaVinci Company ID
+const POLICY_ID       = "YOUR_DAVINCI_POLICY_ID";    // DaVinci Flow Policy ID
 const REGION          = "com";                       // PingOne Region: "com", "ca", "eu", "asia", "com.au"
 
 // Backend that returns { access_token } (SDK token)
