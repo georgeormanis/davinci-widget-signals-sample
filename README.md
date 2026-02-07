@@ -1,4 +1,4 @@
-# DaVinci Widget + PingOne Signals (Protect) Sample
+# DaVinci Widget + PingOne Protect (Signals) Sample
 
 A reference sample app that demonstrates how to integrate **PingOne Signals (Protect) SDK** with the **PingOne DaVinci Widget**.
 
